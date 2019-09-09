@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainGithub"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:titleTextColor="@android:color/white"
+    android:background="#b5348d">
+
+    <EditText
+        android:id="@+id/editsearch"
+        android:background="@drawable/bg_text"
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:hint="Cari api"
+        android:singleLine="true"/>
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="39dp"
+            android:text="Cari"
+            android:background="@drawable/bg_text"/>
+      </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userList">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
