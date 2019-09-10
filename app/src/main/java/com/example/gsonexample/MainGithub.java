@@ -35,7 +35,7 @@ public class MainGithub extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_github);
         userList = findViewById(R.id.userList);
-        userList.setLayoutManager(new LinearLayoutManager(this ));
+        userList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false ));
         Button btn = findViewById(R.id.btnsearch);
         final EditText editText = findViewById(R.id.editsearch);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +51,7 @@ public class MainGithub extends AppCompatActivity {
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d("CODE", response);
+                Log.e("respone", response);
                 try {
                     JSONObject object = new JSONObject(response);
                     Gson gson = new Gson();

@@ -34,7 +34,7 @@ public class GsonAdapter extends RecyclerView.Adapter<GsonAdapter.MyViewHolder> 
     public GsonAdapter(List<DataGson> gsonList) {
         this.gsonList = gsonList;
     }
-
+/
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())

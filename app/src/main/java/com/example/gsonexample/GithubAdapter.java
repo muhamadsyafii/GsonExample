@@ -8,9 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Picasso;
-
 import java.util.List;
 
 public class GithubAdapter extends  RecyclerView.Adapter<GithubAdapter.GithubViewHolder>{
@@ -43,7 +41,6 @@ public class GithubAdapter extends  RecyclerView.Adapter<GithubAdapter.GithubVie
                 Toast.makeText(context, user.getLogin()+ "di click", Toast.LENGTH_SHORT);
             }
         });
-//        Picasso.get().load(gson.getImg()).into(holder.imgUser);
 
     }
 
@@ -57,7 +54,6 @@ public class GithubAdapter extends  RecyclerView.Adapter<GithubAdapter.GithubVie
         TextView txtUser;
         public GithubViewHolder (View itemView){
             super(itemView);
-
             imgUser = itemView.findViewById(R.id.imgUser);
             txtUser = itemView.findViewById(R.id.txtUser);
         }
